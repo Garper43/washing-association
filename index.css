@@ -77,25 +77,30 @@ body {
 }
 
 #gallery {
-
+    display: flex;
+    align-items: center;
 }
 
 #gallery img {
     width: 60vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
-.display>div {
-    height: 0em;
-}
-
-.image {
-    position: relative;
-    width: min-content;
-    height: min-content;
+#before-image {
+    position: absolute;
     overflow: hidden;
-    resize: horizontal;
-    display: flex;
-    flex-direction: row;
-    border-right: 0.1em solid black;
+}
+
+.display {
+    position: relative;
+    width: 60vw;
+}
+
+.display input {
+    position: absolute;
     z-index: 2;
+    height: 0px;
+    width: 100%;
 }

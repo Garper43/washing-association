@@ -81,21 +81,25 @@ body {
     align-items: center;
 }
 
-#gallery img {
+#after-image {
     width: 60vw;
-    position: absolute;
-    top: 0px;
-    left: 0px;
 }
 
 #before-image {
     position: absolute;
     overflow: hidden;
+    width: 50%;
+    top: 0px;
+}
+
+#before-image > img {
+    width: 60vw;
 }
 
 .display {
     position: relative;
     width: 60vw;
+    height: max-content;
 }
 
 .display input {
